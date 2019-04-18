@@ -1,0 +1,28 @@
+{
+  "name": "validator-forms",
+  "version": "0.0.1",
+  "description": "A pack of validation rules and helpers for form validation, built on top of validator.js",
+  "main": "src/index.js",
+  "repository": "https://github.com/akursikov/validator-forms",
+  "author": "Alexander Kursikov <alexander.kursikov@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "babel-core": "^6.0.0",
+    "babel-loader": "^7.0.4",
+    "babel-preset-env": "^1.7.0",
+    "jest": "^23.6.0",
+    "validator": "^10.11.0",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.9"
+  },
+  "peerDependencies": {
+    "validator": "^10.11.0"
+  },
+  "scripts": {
+    "start": "webpack --mode development --watch",
+    "build": "webpack --mode production",
+    "test": "jest"
+  }
+}
