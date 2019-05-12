@@ -2,7 +2,7 @@
   "name": "validator-forms",
   "version": "0.0.1",
   "description": "A pack of validation rules and helpers for form validation, built on top of validator.js",
-  "main": "src/index.js",
+  "main": "dist/validator-forms.js",
   "repository": "https://github.com/akursikov/validator-forms",
   "author": "Alexander Kursikov <alexander.kursikov@gmail.com>",
   "license": "MIT",

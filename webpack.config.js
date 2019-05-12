@@ -5,6 +5,11 @@ module.exports = {
   output: {
     path: path.join(__dirname, '/dist'),
     filename: 'validator-forms.js',
+    library: 'validatorForms',
+    libraryTarget: 'umd',
+  },
+  externals: {
+    validator: 'validator',
   },
   module: {
     rules: [
