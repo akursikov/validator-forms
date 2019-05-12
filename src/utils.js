@@ -1,4 +1,4 @@
-export const sanitize = str => (str ? (str + '').trim() : '');
+export const sanitize = str => (str ? str + '' : '');
 
 export const isArray =
   Array.isArray ||

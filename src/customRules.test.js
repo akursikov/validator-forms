@@ -43,7 +43,3 @@ test('should not pass required, provided null', () => {
 test('should not pass required, provided empty string', () => {
   expect(Rules.required(errorMessage)('')).toBe(errorMessage);
 });
-
-test('should not pass required, provided whitespaces', () => {
-  expect(Rules.required(errorMessage)('    ')).toBe(errorMessage);
-});
