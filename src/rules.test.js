@@ -2,6 +2,78 @@ import * as Rules from './rules';
 
 const errorMessage = 'oops';
 
+test('should pass contains', () => {
+  expect(Rules.contains(errorMessage, 'es')('test')).toBe(null);
+});
+
+test('should not pass contains', () => {
+  expect(Rules.contains(errorMessage, 'hi')('test')).toBe('oops');
+});
+
+test('should pass equals', () => {
+  expect(Rules.equals(errorMessage, 'test')('test')).toBe(null);
+});
+
+test('should not pass equals', () => {
+  expect(Rules.equals(errorMessage, 'hi')('test')).toBe('oops');
+});
+
+test('should pass isAfter', () => {
+  expect(Rules.isAfter(errorMessage, '12.05.2010')('12.05.2030')).toBe(null);
+});
+
+test('should not pass isAfter', () => {
+  expect(Rules.isAfter(errorMessage, '12.05.2030')('12/05/2010')).toBe('oops');
+});
+
+test('should pass isAscii', () => {
+  expect(Rules.isAscii(errorMessage)('test<*>test')).toBe(null);
+});
+
+test('should not pass isAscii', () => {
+  expect(Rules.isAscii(errorMessage)('test±test')).toBe('oops');
+});
+
+test('should pass isBase64', () => {
+  expect(Rules.isBase64(errorMessage)('dGVzdA==')).toBe(null);
+});
+
+test('should not pass isBase64', () => {
+  expect(Rules.isBase64(errorMessage)('==dGVzdA')).toBe('oops');
+});
+
+test('should pass isBefore', () => {
+  expect(Rules.isBefore(errorMessage, '12.05.2030')('12/05/2010')).toBe(null);
+});
+
+test('should not pass isBefore', () => {
+  expect(Rules.isBefore(errorMessage, '12.05.2010')('12.05.2030')).toBe('oops');
+});
+
+test('should pass isBoolean', () => {
+  expect(Rules.isBoolean(errorMessage)('true')).toBe(null);
+});
+
+test('should not pass isBoolean', () => {
+  expect(Rules.isBoolean(errorMessage)('hi')).toBe('oops');
+});
+
+test('should pass isByteLength', () => {
+  expect(Rules.isByteLength(errorMessage, { max: 4 })('test')).toBe(null);
+});
+
+test('should not pass isByteLength', () => {
+  expect(Rules.isByteLength(errorMessage, { max: 4 })('testtest')).toBe('oops');
+});
+
+test('should pass isCreditCard', () => {
+  expect(Rules.isCreditCard(errorMessage)('4111 1111 1111 1111')).toBe(null);
+});
+
+test('should not pass isCreditCard', () => {
+  expect(Rules.isCreditCard(errorMessage)('5111 1111 1111 1111')).toBe('oops');
+});
+
 test('should pass isEmpty', () => {
   expect(Rules.isEmpty(errorMessage)('')).toBe(null);
 });

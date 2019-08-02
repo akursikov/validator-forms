@@ -1,3 +1,5 @@
+## **This is very raw code, if for some reason you want to use it, maybe you should reconsider**
+
 # validator-forms
 
 A pack of validation rules and helpers built on top of [validator.js](https://github.com/chriso/validator.js), focused on making forms validation more flexible and easier. Validator Forms will be handy if you use form libraries like [react-final-form](https://github.com/final-form/react-final-form), [redux-form](https://github.com/erikras/redux-form), [formik](https://github.com/jaredpalmer/formik) and others.
