@@ -22,7 +22,7 @@ A simple example of how it works with react-final-form:
 
     import React from 'react';
     import { Form, Field } from 'react-final-form';
-    import { required } from 'react-forms-validate';
+    import { required } from 'validator-forms';
 
     const validatedFieldRequired = required('This field is required');
 
