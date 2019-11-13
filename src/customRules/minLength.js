@@ -1,4 +1,4 @@
-import { isLength } from 'validator';
+import isLength from 'validator/lib/isLength';
 import { sanitize } from './../utils';
 
 const minLength = (msg, length) => val =>
