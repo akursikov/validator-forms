@@ -1,6 +1,6 @@
 {
   "name": "validator-forms",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A pack of validation rules and helpers for form validation, built on top of validator.js",
   "main": "dist/validator-forms.js",
   "repository": "https://github.com/akursikov/validator-forms",
