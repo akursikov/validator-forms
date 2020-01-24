@@ -6,11 +6,11 @@ A pack of validation rules and helpers built on top of [validator.js](https://gi
 
 You might need to use Validator itself, so it is a peer dependency and should be installed separately.
 
-    npm install --save validation-helper validator
+    npm install --save validator-forms validator
 
 or
 
-    yarn add validation-helper validator
+    yarn add validator-forms validator
 
 ## Getting Started
 
