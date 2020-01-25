@@ -85,7 +85,9 @@ In many cases you need to do multiple checks for a single value. For example, yo
 
 **applyIfNotEmpty(rules) => val => [null | msg]** where `rules` is a singleValidator Forms rule or an array of rules. Returns a function taking a single argument `val` and applying it to all the provided validation rules **only if `val` is not empty**. The returned function returns `null` if all the checks are passed or `msg` of the first failed check.
 
-Note that `val` is considered empty if it contains only whitespaces.
+**applyIfNotEmptyReturnAll(rules) => val => [null | msgs]**. Similar to `applyIfNotEmpty` but unlike it `applyIfNotEmptyReturnAll` returns `msgs` _array of all_ error messages of the failed checks, if there are any, `null` otherwise.
+
+**Note that `val` is considered empty if it contains only whitespaces.**
 
 ## License
 
