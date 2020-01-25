@@ -29,12 +29,12 @@ test('should fail on the second check, contains a digit', () => {
   ).toBe('oops alpha');
 });
 
-test('not empty, should pass the only check', () => {
+test('should pass the only check', () => {
   expect(applyRules(CustomRules.maxLength('oops too long', 10))('test')).toBe(
     null
   );
 });
 
-test('not empty, should pass without rules', () => {
+test('should pass without rules', () => {
   expect(applyRules()('test')).toBe(null);
 });
