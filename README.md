@@ -79,7 +79,9 @@ You can check them in [documentation](https://github.com/chriso/validator.js#val
 
 In many cases you need to do multiple checks for a single value. For example, you want to show `This field is required` if the input is empty and `This field must be shorter than 10 symbols` if it's too long. For such situations Validator Forms provides helpers.
 
-**applyRules(rules) => val => [null | msg]** where `rules` is a single Validator Forms rule or an array of rules. Returns a function taking a single argument `val` and applying it to all the provided validation rules. Returns `null` if all the checks are passed or `msg` of the first failed check.
+**applyRules(rules) => val => [null | msg]** where `rules` is a single Validator Forms rule or an array of rules. Returns a function taking a single argument `val` and applying it to all the provided validation rules. Returns `null` if all the checks passed or `msg` of the first failed check.
+
+**applyRulesReturnAll(rules) => val => [null | msgs]**. Similar to `applyRules` but unlike it `applyRulesReturnAll` returns `msgs` _array of all_ error messages of the failed checks, if there are any, `null` otherwise.
 
 **applyIfNotEmpty(rules) => val => [null | msg]** where `rules` is a singleValidator Forms rule or an array of rules. Returns a function taking a single argument `val` and applying it to all the provided validation rules **only if `val` is not empty**. The returned function returns `null` if all the checks are passed or `msg` of the first failed check.
 
