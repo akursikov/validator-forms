@@ -7,6 +7,12 @@
   "author": "Alexander Kursikov <alexander.kursikov@gmail.com>",
   "license": "MIT",
   "private": false,
+  "keywords": [
+    "validation",
+    "validator",
+    "helper",
+    "form"
+  ],
   "devDependencies": {
     "@babel/core": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
