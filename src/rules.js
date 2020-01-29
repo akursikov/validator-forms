@@ -1,9 +1,6 @@
 import * as validator from 'validator';
 import { sanitize } from './utils';
 
-export const contains = (msg, seed) => val =>
-  validator.contains(sanitize(val), seed) ? null : msg;
-
 export const equals = (msg, comparison) => val =>
   validator.equals(sanitize(val), comparison) ? null : msg;
 
