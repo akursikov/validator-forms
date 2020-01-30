@@ -25,4 +25,5 @@ module.exports = {
     ],
   },
   plugins: [new BundleAnalyzerPlugin()],
+  mode: 'production',
 };
