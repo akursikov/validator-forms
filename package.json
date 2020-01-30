@@ -11,7 +11,8 @@
     "validation",
     "validator",
     "helper",
-    "form"
+    "form",
+    "utilities"
   ],
   "sideEffects": false,
   "devDependencies": {

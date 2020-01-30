@@ -8,7 +8,7 @@ module.exports = {
     path: path.join(__dirname, '/dist'),
     filename: 'validator-forms.js',
     library: 'validatorForms',
-    libraryTarget: 'umd',
+    libraryTarget: 'commonjs2',
   },
   externals: {
     validator: 'validator',
