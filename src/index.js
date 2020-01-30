@@ -7,3 +7,5 @@ export { default as applyIfNotEmpty } from './helpers/applyIfNotEmpty';
 export { default as applyIfNotEmptyReturnAll } from './helpers/applyIfNotEmptyReturnAll';
 export { default as applyRules } from './helpers/applyRules';
 export { default as applyRulesReturnAll } from './helpers/applyRulesReturnAll';
+export { default as applyRulesReturnAll } from './helpers/applyRulesReturnAll';
+export { default as contains } from './rules/contains';
